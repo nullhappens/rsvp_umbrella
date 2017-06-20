@@ -28,3 +28,11 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+config :rsvp, Rsvp.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "rsvp",
+  username: "rsvp",
+  password: "gAFCWwYSe913zapE",
+  hostname: "localhost"
+
+config :rsvp, ecto_repos: [Rsvp.Repo]
