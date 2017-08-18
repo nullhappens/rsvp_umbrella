@@ -1,5 +1,5 @@
 defmodule RsvpWeb.EventView do
-  use RsvpWeb.Web, :view  
+  use RsvpWeb.Web, :view
 
   def format_date(date) do
     {{y, m, d}, {h, mi, _}} = Ecto.DateTime.to_erl(date)
